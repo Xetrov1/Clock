@@ -31,9 +31,10 @@ setInterval(drawClock, 1000);
         ctx.fill();
         
         grad = ctx.createRadialGradient(0,0,radius*0.95,0,0,radius*1.05);
-        grad.addColorStop(0,"#333");
-        grad.addColorStop(0.5, "white");
-        grad.addColorStop(1, "#333");
+        grad.addColorStop(0.25,"blue");
+        grad.addColorStop(0.50, "red");
+        grad.addColorStop(0.75, "yellow");
+        grad.addColorStop(1.00, "green");
         ctx.strokeStyle = grad;
         ctx.lineWidth = radius*0.1;
         ctx.stroke();
